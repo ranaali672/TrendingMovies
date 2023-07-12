@@ -30,9 +30,11 @@ export default function MovieDetails() {
            <h2 className="text-info">{details.title} {details.name}</h2>
         
            <p className='text-muted my-3 fs-6'>{details.overview} {details.biography}</p>
-           {details.vote_average? <h5>Vote Average :  <span className='btn btn-info fs-6 px-2 py-1'>{details.vote_average.toFixed(2)}</span> </h5>:""}
-           {details.vote_count? <h5>Vote Count : <span className='btn btn-info fs-6 px-2 py-1'>{details.vote_count} </span> </h5>:""}
-           {details.known_for_department?<h5 className="text-white"> Department : <span className='btn btn-info'>{details.known_for_department}</span> </h5> :""}
+
+           {details.vote_average? <span>Vote Average :  <span className='btn btn-info fs-6 px-2 py-1'>{details.vote_average.toFixed(2)}</span> </span>:""}
+
+           {details.vote_count? <span>Vote Count : <span className='btn btn-info fs-6 px-2 py-1'>{details.vote_count} </span> </span>:""}
+           {details.known_for_department?<span className="text-white"> Department : <span className='btn btn-info'>{details.known_for_department}</span> </span> :""}
            
           
            

@@ -47,6 +47,7 @@ setUserData(data)
       {path:"people" , element:<ProtectedRouting><People/></ProtectedRouting> },
       {path:"moviedetails/:id/:mediaType" , element: <ProtectedRouting> <MovieDetails/></ProtectedRouting>},
       {path:"login" , element: <Login saveUserData={saveUserData} />},
+      {path:"/TrendingMovies" , element: <Register />},
       {index:true, element:<ProtectedRouting2><Register /></ProtectedRouting2> },
       {path:'register',element:<Register ></Register>},
       {path:"home" , element: <ProtectedRouting><Home/></ProtectedRouting> },
